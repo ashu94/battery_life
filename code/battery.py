@@ -77,11 +77,7 @@ for file in os.listdir('/sys/class/power_supply/'):
       found += 1
 if found == 0 :
   print "no battery information file found"
-#      print file
-#board.digital[8].write(1)
-#cat /sys/class/power_supply/BAT1/capacity
-#f = open('/sys/class/power_supply/BAT1/capacity', 'r')
-#print f.read()
+
 while 1:
   with open('/sys/class/power_supply/'+file+'/capacity', 'r') as f:
     percentage = int(f.readlines()[0])
