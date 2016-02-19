@@ -86,8 +86,8 @@ while 1:
     board.digital[8].write(0)
   if percentage < 60:
     board.digital[8].write(1)
-  elif percentage<80 and percentage>60:
+# elif percentage<80 and percentage>60:
     board.digital[8].write(1)
-  time.sleep(5)
+#   time.sleep(5)
     
 
